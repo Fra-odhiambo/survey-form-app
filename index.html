@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform!</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="number" id="number-label">Age (optional):</label><br>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="120"><br><br>
+
+    <label for="select" id="select-label">Select your role:</label><br>
+    <select id="dropdown" name="role">
+      <option value="student">Student</option>
+      <option value="full time job">Full Time Job</option>
+      <option value="full time learner">Full Time Learner</option>
+      <option value="prefer not to say">Prefer Not to Say</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Would you recommend freeCodeCamp to a friend?</label><br>
+    <input type="radio" id="definitely" name="recommendation" value="Definitely">
+    <label for="definitely">Definitely</label><br>
+
+    <input type="radio" id="maybe" name="recommendation" value="Maybe">
+    <label for="maybe">Maybe</label><br>
+
+    <input type="radio" id="not-sure" name="recommendation" value="Not sure">
+    <label for="not-sure">Not sure</label><br><br>
+
+    <label for="comments">Additional comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments here..."></textarea><br><br>
+
+    <label for="checkboxes">Areas to improve:</label><br>
+    <input type="checkbox" id="front-end-projects" name="areas[]" value="Front-end Projects">
+    <label for="front-end-projects">Front-end Projects</label><br>
+
+    <input type="checkbox" id="back-end-projects" name="areas[]" value="Back-end Projects">
+    <label for="back-end-projects">Back-end Projects</label><br>
+
+    <input type="checkbox" id="data-visualization" name="areas[]" value="Data Visualization">
+    <label for="data-visualization">Data Visualization</label><br><br>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
